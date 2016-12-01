@@ -13,7 +13,7 @@ var colores = [color1, color2, color3, color4];
 function setup(){
   createCanvas(windowWidth, windowHeight/1.2);
   angleSlider = createSlider(0,PI, PI/4, 0.001);
-  depthSlider = createSlider(2, 90, 3, 2);
+  depthSlider = createSlider(5, 90, 3, 2);
   //noLoop();
 }
 
@@ -25,10 +25,9 @@ function draw(){
   //console.log(depth);
 
   translate(windowWidth/2, height);
-  stroke(color4)
-  if (mousePressed){
-    branch(treeHeight);
-  }
+  stroke(color4);
+  branch(treeHeight);
+
 
   //stop();
 }
